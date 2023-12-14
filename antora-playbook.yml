@@ -1,0 +1,20 @@
+site:
+  title: JOpedia
+  start_page: summer::index.adoc
+content:
+  sources:
+    - url: https://github.com/benjaminParisel/jo-summer
+      start_path: docs
+      branches: [2016, 2020]
+antora:
+  extensions:
+    - require: '@antora/lunr-extension'
+
+ui:
+  bundle:
+    url: https://gitlab.com/antora/antora-ui-default/-/jobs/artifacts/HEAD/raw/build/ui-bundle.zip?job=bundle-stable
+    snapshot: true
+
+urls:
+  html_extension_style: drop
+  redirect_facility: static
