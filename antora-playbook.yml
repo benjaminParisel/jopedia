@@ -9,6 +9,11 @@ content:
 antora:
   extensions:
     - require: '@antora/lunr-extension'
+asciidoc:
+  attributes:
+    kroki-fetch-diagram: true
+  extensions:
+    - asciidoctor-kroki
 
 ui:
   supplemental_files: ./supplemental-ui

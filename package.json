@@ -2,7 +2,7 @@
   "name": "jopedia",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",  
+  "main": "index.js",
   "license": "MIT",
   "devDependencies": {
     "@antora/cli": "3.1.5",
@@ -10,11 +10,12 @@
     "http-server": "^14.1.1"
   },
   "dependencies": {
-    "@antora/lunr-extension": "^1.0.0-alpha.8"
+    "@antora/lunr-extension": "^1.0.0-alpha.8",
+    "asciidoctor-kroki": "^0.18.1"
   },
   "scripts": {
     "build": "antora --fetch antora-playbook.yml",
-    "dev": "http-server build/site",
-    "start": "npm run build && npm run dev -c-1"
+    "build:serve": "http-server build/site",
+    "dev": "npm run build && npm run build:serve -c-1"
   }
 }
