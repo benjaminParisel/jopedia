@@ -5,7 +5,7 @@ content:
   sources:
     - url: https://github.com/benjaminParisel/jo-summer
       start_path: docs
-      branches: [2016, 2020]
+      branches: [2016, 2020, 2024]
 antora:
   extensions:
     - require: '@antora/lunr-extension'
@@ -24,3 +24,6 @@ ui:
 urls:
   html_extension_style: drop
   redirect_facility: static
+  latest_version_segment: latest
+  latest_prerelease_version_segment: next
+  latest_version_segment_strategy: redirect:to

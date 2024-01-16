@@ -15,6 +15,6 @@
     "build": "antora --fetch antora-playbook.yml",
     "build:dev": "antora  antora-playbook.yml",
     "build:serve": "http-server build/site",
-    "dev": "npm run build:dev && npm run build:serve -c-1"
+    "dev": "npm run build && npm run build:serve -c-1"
   }
 }
