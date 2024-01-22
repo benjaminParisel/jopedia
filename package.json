@@ -9,12 +9,13 @@
     "@antora/site-generator": "3.1.5",
     "@antora/lunr-extension": "^1.0.0-alpha.8",
     "asciidoctor-kroki": "^0.18.1",
-    "http-server": "^14.1.1"
+    "http-server": "^14.1.1",
+    "rimraf": "^5.0.5"
   },
   "scripts": {
     "build": "antora --fetch antora-playbook.yml",
-    "build:dev": "antora antora-playbook.yml",
-    "build:serve": "http-server build/site",
+    "build:dev": "rimraf build && antora antora-playbook.yml",
+    "build:serve": "http-server -c-1 build/site",
     "dev": "npm run build && npm run build:serve -c-1"
   }
 }
