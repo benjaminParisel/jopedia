@@ -12,14 +12,20 @@ content:
 antora:
   extensions:
     - require: '@antora/lunr-extension'
-asciidoc:
-  attributes:
-    kroki-fetch-diagram: true
-  extensions:
-    - asciidoctor-kroki
+# Asciidoctor extensions are commented to avoid errors when building the site offline for our Snowcamp talk
+# asciidoc:
+#   attributes:
+#     kroki-fetch-diagram: true
+#   extensions:
+#     - asciidoctor-kroki
 
 ui:
   supplemental_files: ./supplemental-ui
   bundle:
     url: https://gitlab.com/antora/antora-ui-default/-/jobs/artifacts/HEAD/raw/build/ui-bundle.zip?job=bundle-stable
     snapshot: true
+
+urls:
+  latest_version_segment: latest
+  latest_prerelease_version_segment: next
+  latest_version_segment_strategy: redirect:to
