@@ -9,42 +9,19 @@ A la suite de ces steps, nous allons constuire un rendu similaire à [ce mini wi
 Pour visualiser correctement le rendu du site, nous allos utiliser `http-server`
 Dans un terminal séparé, à la racine de ce repository, lancer `npm run build:serve` (et veillez à bien le garder constamment actif)
 
-## Etape 3: Aggrégation de plusieurs composants
+## Etape 4: Amélioration de l'UI
 
-Modifier le fichier `antora-playbook.yml` pour ajouter 2 extensions:
+Utilisez [ui-supplemental](https://docs.antora.org/antora/latest/playbook/ui-supplemental-files/) pour:
 
-### Antora
+- Modifier l'icone dans l'onglet du navigateur
 
-Intégration de [Antora-Lunr-extensions](https://gitlab.com/antora/antora-lunr-extension)
+- Supprimer les boutons statiques récupérer dynamiquement le titre des composants pour les afficher dans le header.
 
-> npm i --save-dev @antora/lunr-extension
+Tips:
 
-- Modifier le fichier `antora-playbook.yml`pour ajouter:
+- Structure de la [UI par défaut](https://gitlab.com/antora/antora-ui-default/-/tree/master/src?ref_type=heads) fournie par Antora
+- Le fichier svg de l'icone à ajouter est fournie dans le dossier `./filesToMove`
 
-```
- antora:
-  extensions:
-    - '@antora/lunr-extension'
-```
+## Etape suivante et correction
 
-- Regénerer le site et rafraichir [http://localhost:8080/](http://localhost:8080/)
-
-### AsciiDoc
-
-Intégration de [Asciidoctor Kroki Extension](https://github.com/asciidoctor/asciidoctor-kroki)
-
-> npm i --save-dev @antora/lunr-extension
-
-```
-asciidoc:
-  attributes:
-    kroki-fetch-diagram: true
-  extensions:
-    - asciidoctor-kroki
-```
-
-- Regénérer le site et aller sur [http://localhost:8080/summer/2020/medals](http://localhost:8080/summer/2020/medals)
-
-## Etape suivante
-
-La suite se trouve sur la branche: step/4-ui
+La suite se trouve sur la branche: step/5-xxx

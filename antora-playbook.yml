@@ -9,6 +9,15 @@ content:
     - url: https://github.com/tbouffard/jo-winter
       branches: [2018, 2022, 2026]
 
+antora:
+  extensions:
+    - require: '@antora/lunr-extension'
+asciidoc:
+  attributes:
+    kroki-fetch-diagram: true
+  extensions:
+    - asciidoctor-kroki
+
 ui:
   bundle:
     url: https://gitlab.com/antora/antora-ui-default/-/jobs/artifacts/HEAD/raw/build/ui-bundle.zip?job=bundle-stable
