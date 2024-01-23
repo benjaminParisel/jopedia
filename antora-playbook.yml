@@ -5,18 +5,19 @@ content:
   sources:
     - url: https://github.com/benjaminParisel/jo-summer
       start_path: docs
-      branches: [2016, 2020, 2024]
+      branches: [2016, 2020]
     - url: https://github.com/tbouffard/jo-winter
-      branches: [2018, 2022, 2026]
+      branches: [2018, 2022]
 
 antora:
   extensions:
     - require: '@antora/lunr-extension'
-asciidoc:
-  attributes:
-    kroki-fetch-diagram: true
-  extensions:
-    - asciidoctor-kroki
+# Asciidoctor extensions are commented to avoid errors when building the site offline for our Snowcamp talk
+# asciidoc:
+#   attributes:
+#     kroki-fetch-diagram: true
+#   extensions:
+#     - asciidoctor-kroki
 
 ui:
   bundle:
