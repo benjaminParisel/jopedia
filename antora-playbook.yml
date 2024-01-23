@@ -1,54 +1,14 @@
-#STEP 1
-# site:
-#   title: Antora Docs
-#   start_page: component-b::index.adoc
-# content:
-#   sources:
-#   - url: https://gitlab.com/antora/demo/demo-component-a.git
-#     branches: HEAD
-#   - url: https://gitlab.com/antora/demo/demo-component-b.git
-#     branches: [v2.0, v1.0]
-#     start_path: docs
-# ui:
-#   bundle:
-#     url: https://gitlab.com/antora/antora-ui-default/-/jobs/artifacts/HEAD/raw/build/ui-bundle.zip?job=bundle-stable
-#     snapshot: true
-
-# STEP2
 site:
-  title: JOpedia
-  start_page: summer::index.adoc # si on met rien, c'est cassé
-  url: https://benjaminparisel.github.io/jopedia/
+  title: Antora Docs
+  start_page: component-b::index.adoc
 content:
   sources:
-    - url: https://github.com/benjaminParisel/jo-summer
+    - url: https://gitlab.com/antora/demo/demo-component-a.git
+      branches: HEAD
+    - url: https://gitlab.com/antora/demo/demo-component-b.git
+      branches: [v2.0, v1.0]
       start_path: docs
-      branches: [2016, 2020, 2024]
-    - url: https://github.com/tbouffard/jo-winter
-      branches: [2018, 2022, 2026]
-
-# STEP 3
 ui:
-  # Juste supplemental_files: ./supplemental-ui
-  supplemental_files: ./supplemental-ui
   bundle:
     url: https://gitlab.com/antora/antora-ui-default/-/jobs/artifacts/HEAD/raw/build/ui-bundle.zip?job=bundle-stable
     snapshot: true
-
-# STEP 4
-antora:
-  extensions:
-    - require: '@antora/lunr-extension'
-asciidoc:
-  attributes:
-    kroki-fetch-diagram: true
-  extensions: # à commenter pour la step 5
-    - asciidoctor-kroki
-
-# Step 5 urls
-urls:
-  html_extension_style: drop # à voir si on garde ça
-  redirect_facility: static #page-aliases (mais à voir)
-  latest_version_segment: latest
-  latest_prerelease_version_segment: next
-  latest_version_segment_strategy: redirect:to
