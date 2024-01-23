@@ -1,13 +1,14 @@
 site:
-  title: Antora Docs
-  start_page: component-b::index.adoc
+  title: JOpedia
+  start_page: summer::index.adoc
 content:
   sources:
-    - url: https://gitlab.com/antora/demo/demo-component-a.git
-      branches: HEAD
-    - url: https://gitlab.com/antora/demo/demo-component-b.git
-      branches: [v2.0, v1.0]
+    - url: https://github.com/benjaminParisel/jo-summer
       start_path: docs
+      branches: [2016, 2020, 2024]
+    - url: https://github.com/tbouffard/jo-winter
+      branches: [2018, 2022, 2026]
+
 ui:
   bundle:
     url: https://gitlab.com/antora/antora-ui-default/-/jobs/artifacts/HEAD/raw/build/ui-bundle.zip?job=bundle-stable
