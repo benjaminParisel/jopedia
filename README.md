@@ -2,12 +2,15 @@
 
 ## Objectif
 
-A la suite de ces steps, nous allons constuire un rendu similaire à [ce mini wiki](https://benjaminparisel.github.io/jopedia/)
+A la suite de ces steps, nous allons constuire un rendu similaire à [ce mini site](https://benjaminparisel.github.io/jopedia/).
 
 ## Common step
 
-Pour visualiser correctement le rendu du site, nous allos utiliser `http-server`
-Dans un terminal séparé, à la racine de ce repository, lancer `npm run build:serve` (et veillez à bien le garder constamment actif)
+Pour visualiser correctement le rendu du site, nous allons utiliser `http-server`.
+
+Dans un terminal séparé, à la racine de ce repository, lancer `npm run build:serve` (et veillez à bien le garder constamment actif).
+
+Pour générer le site, utiliser la commande `npm run build:dev`
 
 ## Etape 5: Urls
 
