@@ -18,7 +18,15 @@ Utilisez [ui-supplemental](https://docs.antora.org/antora/latest/playbook/ui-sup
 
 - Modifier l'icone dans l'onglet du navigateur
 
-- Supprimer les boutons statiques récupérer dynamiquement le titre des composants pour les afficher dans le header.
+- Supprimer les boutons statiques récupérer dynamiquement le titre des composants pour les afficher dans le header.  
+Le bloc de code permettant de récupérer la liste des composants devrait ressembler à ce qui suit:
+```handlebars
+{{#each site.components}}
+    <a class="navbar-item is-hoverable" href="{{{./latest.url}}}">{{{./title}}}</a>
+{{/each}}
+```
+
+- Bonus: styliser les résultats de la recherche `lunr-search` 
 
 Tips:
 
