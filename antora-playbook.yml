@@ -28,4 +28,3 @@ ui:
 urls:
   latest_version_segment: latest
   latest_prerelease_version_segment: next
-  latest_version_segment_strategy: redirect:to
