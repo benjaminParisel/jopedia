@@ -23,8 +23,9 @@ Utilisez [ui-supplemental](https://docs.antora.org/antora/latest/playbook/ui-sup
 Tips:
 
 - Structure de la [UI par défaut](https://gitlab.com/antora/antora-ui-default/-/tree/master/src?ref_type=heads) fournie par Antora
-- Le fichier svg de l'icone à ajouter est fournie dans le dossier `./filesToMove`
+- Les fichiers handlebars de la UI par défaut à modifier sont fournis dans le dossier `./filesToMove`
+- Le fichier SVG de l'icone à ajouter est fournie dans le dossier `./filesToMove`
 
 ## Etape suivante et correction
 
-La suite se trouve sur la branche: step/5-xxx
+La suite se trouve sur la branche: step/5-urls
