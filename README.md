@@ -16,7 +16,7 @@ Suivre le [Quickstart](https://docs.antora.org/antora/latest/install-and-run-qui
 
 S'arrêter juste avant le paragraphe "Create a playbook", ce repository contient déjà tout ce qui suit. 
 
-Run `npm run build:dev`, puis accéder à [http://localhost:8080/](http://localhost:8080/).
+Run `npm run build:dev`, puis accéder à http://localhost:8080/.
 
 ## Etape suivante
 
