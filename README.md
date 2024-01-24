@@ -24,10 +24,9 @@ A la suite du playbook, ajouter la clé suivante:
 ```
 urls:
     latest_version_segment: <Replace_with_any_value>
-    latest_version_segment_strategy: redirect:to
 ```
 
-Une fois la modification effectué et le site regénérer, comparer dans un nouvel onglet l'url affichée dans le browser.
+Une fois la modification effectuée et le site regénéré, comparer dans un nouvel onglet l'url affichée dans le browser.
 
 ### Next
 
