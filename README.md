@@ -17,7 +17,7 @@ Modifier le fichier `antora-playbook.yml` pour:
 - Afficher comme titre `JOpedia`
 - Aggréger les 2 composants:
   ** https://github.com/tbouffard/jo-winter, les branches 2018,2022
-  ** https://github.com/benjaminParisel/jo-summer, les branches 2016,2020
+  ** https://github.com/benjaminParisel/jo-summer, les branches des 2 éditions ayant eu lieu avant 2023.
 
 Run `npm run build:dev` puis accédez à [http://localhost:8080/](http://localhost:8080/)
 
