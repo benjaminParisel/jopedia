@@ -1,0 +1,5 @@
+/* lunr-search extension */
+.search-result-document-hit .search-result-highlight {
+    /* use important as the lunr-search extension adds its CSS rules at the end of the page. */
+    background: rgb(242, 229, 118) !important;
+}
