@@ -31,8 +31,7 @@ Le bloc de code permettant de récupérer la liste des composants devrait ressem
 Tips:
 
 - Structure de la [UI par défaut](https://gitlab.com/antora/antora-ui-default/-/tree/master/src?ref_type=heads) fournie par Antora
-- Les fichiers handlebars de la UI par défaut à modifier sont fournis dans le dossier `./filesToMove`
-- Le fichier SVG de l'icone à ajouter est fournie dans le dossier `./filesToMove`
+- Les fichiers handlebars de la UI par défaut à modifier sont fournis dans le dossier `./supplemental-ui`
 
 ## Etape suivante et correction
 
