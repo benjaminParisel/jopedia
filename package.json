@@ -14,7 +14,7 @@
   },
   "scripts": {
     "build": "antora --fetch antora-playbook.yml",
-    "build:dev": "rimraf build && antora antora-playbook.yml",
+    "build:dev": "rimraf build && antora generate antora-playbook.yml --url 'http://localhost:8080/'",
     "build:serve": "http-server -c-1 build/site",
     "dev": "npm run build && npm run build:serve -c-1"
   }
