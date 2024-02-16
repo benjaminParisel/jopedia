@@ -38,7 +38,7 @@ ui:
 # STEP 4
 antora:
   extensions:
-    - require: '@antora/lunr-extension'
+    - require: "@antora/lunr-extension"
 asciidoc:
   attributes:
     kroki-fetch-diagram: true

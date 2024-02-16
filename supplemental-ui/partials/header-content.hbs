@@ -17,9 +17,9 @@
     </div>
      {{!-- STEP 3--}}
     <div id="topbar-nav" class="navbar-menu">
-      <div class="navbar-end">        
-      {{#each site.components}}
-        <a class="navbar-item is-hoverable" href="{{{./latest.url}}}">{{{./title}}}</a>      
+      <div class="navbar-end">              
+      {{#each site.components}}                
+        <a class="navbar-item is-hoverable" href="{{{../site.url}}}{{{./latest.url}}}">{{{./title}}}</a>      
       {{/each}}
       </div>  
     </div>
